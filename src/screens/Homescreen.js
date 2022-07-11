@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
+import Tweet from '../components/Tweet/Tweet'
 const Homescreen = () => {
   return (
     <View>
-      <Text>Homescreen</Text>
+      <Tweet />
+      <Tweet />
+      <Tweet />
     </View>
   )
 }
