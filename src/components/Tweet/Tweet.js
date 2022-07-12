@@ -25,19 +25,19 @@ const Tweet = ({ name, username, createdAt, content, image,comment,retweet,heart
         </View>
         <View style={styles.iconContainer}>
           <View style={styles.FirsticonsubContainer} >
-            <EvilIcons name='comment' size={25} />
+            <EvilIcons name='comment' color={'black'} size={25} />
             <Text style={styles.iconText}>{comment}</Text>
           </View>
           <View style={styles.iconsubContainer} >
-            <EvilIcons name='retweet' size={25} />
+            <EvilIcons name='retweet' color={'black'} size={25} />
             <Text style={styles.iconText}>{retweet}</Text>
           </View>
           <View style={styles.iconsubContainer}>
-            <Ionicons name='heart' size={20} />
+            <Ionicons name='heart' color={'black'} size={20} />
             <Text style={styles.iconText}> {heart} </Text>
           </View>
           <View style={styles.iconsubContainer}>
-            <EvilIcons name='share-google' size={25} />
+            <EvilIcons name='share-google' color={'black'} size={25} />
           </View>
 
         </View>
@@ -77,9 +77,13 @@ const styles = StyleSheet.create({
   },
   RightText2: {
     marginHorizontal: 5,
+    color: 'black',
+
   },
   RightText3: {
     marginHorizontal: 5,
+    color: 'black',
+
   },
   image2: {
     width: '100%',
@@ -90,6 +94,8 @@ const styles = StyleSheet.create({
   },
   Textcontent: {
     lineHeight: 20,
+    color: 'black',
+
   },
   iconContainer: {
     marginVertical: 10,
@@ -106,6 +112,8 @@ const styles = StyleSheet.create({
   },
   iconText: {
     marginHorizontal: 5,
+    color: 'black',
+
   },
 
 })

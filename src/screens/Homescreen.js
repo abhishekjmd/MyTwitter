@@ -4,11 +4,12 @@ import Tweet from '../components/Tweet/Tweet'
 import TweetRender from '../components/Tweet/TweetRender'
 import FloatingIcon from '../components/FloatingIcon/FloatingIcon'
 import NewSubScreen from '../components/FloatingIcon/NewSubScreen'
+import AddNewTweet from '../components/AddNewTweet/AddNewTweet'
 const Homescreen = () => {
   return (
     <View>
-      <TweetRender />
-      <FloatingIcon />
+    <FloatingIcon />
+    <TweetRender />
     </View>
   )
 }
