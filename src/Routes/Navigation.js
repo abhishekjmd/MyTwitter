@@ -21,6 +21,8 @@ import Spacesscrean from '../screens/Spacesscreen'
 import Communities from '../screens/Communities';
 import DirectMessagescreen from '../screens/DirectMessagescreen'
 import ProfilePicture from '../components/ProfilePicture'
+import StackNavigation from './StackNavigation';
+
 const Navigation = () => {
   return (
     <NavigationContainer>
@@ -33,7 +35,7 @@ const Navigation = () => {
         }} >
         <Tab.Screen
           name='Home'
-          component={HomeStack}
+          component={StackNavigation}
           options={{
             headerShown: false,
             'tabBarIcon': (({ color }) =>
@@ -113,7 +115,6 @@ const HomeStack = () => {
             <ProfilePicture />
           )
         }}
-
       />
     </Stack.Navigator>
   )

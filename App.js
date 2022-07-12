@@ -6,7 +6,7 @@ import Homescreen from './src/screens/Homescreen'
 const App = () => {
   return (
     <View style={styles.root} >
-      <Homescreen />
+      <Navigation />
     </View>
   )
 }
