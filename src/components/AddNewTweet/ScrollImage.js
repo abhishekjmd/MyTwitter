@@ -1,48 +1,45 @@
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native'
+import { StyleSheet,View, Image, FlatList,TouchableOpacity } from 'react-native'
 import React from 'react'
-import Ionicons from 'react-native-vector-icons/Ionicons'
 import AnotherData from '../../Data/AnotherData'
-const ScrollImage = () => {
+const ScrollImage = ({ type, source }) => {
   return (
     <View>
-    <View style={styles.mainContainer}>
-      <View style={styles.Container}>
-        <Ionicons name='camera-outline' size={35} color={'#4288c9'} />
+      <View style={styles.mainContainer}>
+        <TouchableOpacity activeOpacity={0.7} style={styles.Container}>
+          <Image style={[styles.image, styles[`image_${type}`]]} source={source} />
+        </TouchableOpacity>
       </View>
-        <FlatList
-          data={AnotherData.images}
-          horizontal
-          renderItem={({ item }) => {
-            return (
-              <View style={styles.Container}>
-                <Image style={styles.image} source={item.image} />
-              </View>
-            )
-          }}
-        />
-
-
-      {/*
-      <View style={styles.Container}> 
-      <Image style={styles.image} source={require('../../../assets/Images/sample1.jpeg')} />
-      </View>
-      */}
-      <View style={styles.Container}>
-        <Ionicons name='image-outline' size={35} color={'#4288c9'} />
-      </View>
-    </View>
     </View>
   )
 }
 
-export default ScrollImage
+const ScrollImageRenderer = () => {
+  return (
+    <View>
+      <FlatList
+        data={AnotherData.images}
+        horizontal
+        renderItem={({ item }) => {
+          return (
+            <ScrollImage
+              source={item.image}
+              type={item.type}
+            />
+          )
+        }}
+      />
+
+    </View>
+  )
+}
+
+export default ScrollImageRenderer
 
 const styles = StyleSheet.create({
   mainContainer: {
     height: 200,
     width: '100%',
     flexDirection: 'row',
-    // backgroundColor:'blue'
   },
   Container: {
     margin: 5,
@@ -60,5 +57,13 @@ const styles = StyleSheet.create({
     width: '98%',
     borderRadius: 15,
 
+  },
+  image_primary: {
+    height: 50,
+    width: 50,
+  },
+  image_secondary: {
+    height: 60,
+    width: 60,
   },
 })

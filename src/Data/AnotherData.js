@@ -1,8 +1,8 @@
 export default{
 
     images:[
-        {
-                image: require('../../assets/Images/sample1.jpeg')
+        {   type:'primary',
+            image: require('../../assets/Images/icon1.jpeg')
         },
         {
             image: require('../../assets/Images/sample2.jpeg')
@@ -17,7 +17,8 @@ export default{
             image: require('../../assets/Images/sample5.jpeg')
         },
         {
-            image: require('../../assets/Images/sample6.jpeg')
+            type:'secondary',
+            image: require('../../assets/Images/icon2.jpeg')
         },
 
     ],
