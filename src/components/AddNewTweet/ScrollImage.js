@@ -1,4 +1,4 @@
-import { StyleSheet,View, Image, FlatList,TouchableOpacity } from 'react-native'
+import { StyleSheet, View, Image, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
 import AnotherData from '../../Data/AnotherData'
 const ScrollImage = ({ type, source }) => {
@@ -38,9 +38,10 @@ export default ScrollImageRenderer
 
 const styles = StyleSheet.create({
   mainContainer: {
-    height: 200,
+    height: 225,
     width: '100%',
     flexDirection: 'row',
+    alignItems: 'flex-end',
   },
   Container: {
     margin: 5,

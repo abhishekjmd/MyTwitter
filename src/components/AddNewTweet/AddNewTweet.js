@@ -5,6 +5,7 @@ import TopNewTweet from './TopNewTweet'
 import MiddleNewTweet from './MiddleNewTweet'
 import ScrollImageRenderer from './ScrollImage'
 import BottomNewTweet from './BottomNewTweet'
+import BottomTop from './BottomTop'
 const AddNewTweet = () => {
     return (
         <View style={styles.root} >
@@ -12,6 +13,7 @@ const AddNewTweet = () => {
             <MiddleNewTweet />
             {/* flatlist system image  */}
             <ScrollImageRenderer />
+            <BottomTop />
             <BottomNewTweet />
             
         </View>

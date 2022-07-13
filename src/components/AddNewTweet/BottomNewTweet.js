@@ -29,11 +29,10 @@ export default BottomNewTweet
 const styles = StyleSheet.create({
     subMainContainer: {
         flexDirection: 'row',
-        // backgroundColor:'blue',
-        paddingTop:20,
-        paddingBottom:20,
-        borderWidth:1,
-        borderColor: '#e6e5e3',
+        paddingTop:15,
+        paddingBottom:15,
+        borderTopWidth:1,
+        borderTopColor: '#e6e5e3',
 
     },
     iconContainer: {
