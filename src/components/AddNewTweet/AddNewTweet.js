@@ -4,6 +4,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import TopNewTweet from './TopNewTweet'
 import MiddleNewTweet from './MiddleNewTweet'
 import ScrollImageRenderer from './ScrollImage'
+import BottomNewTweet from './BottomNewTweet'
 const AddNewTweet = () => {
     return (
         <View style={styles.root} >
@@ -11,6 +12,8 @@ const AddNewTweet = () => {
             <MiddleNewTweet />
             {/* flatlist system image  */}
             <ScrollImageRenderer />
+            <BottomNewTweet />
+            
         </View>
     )
 }

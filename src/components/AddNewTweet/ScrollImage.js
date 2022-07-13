@@ -27,6 +27,7 @@ const ScrollImageRenderer = () => {
             />
           )
         }}
+        showsHorizontalScrollIndicator={false}
       />
 
     </View>
